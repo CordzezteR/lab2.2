@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    double x, y;
+    printf("\n\tEnter X:");
+    scanf("%lf", &x);
+
+    if(x>=10 && x<100)
+
+    y = log(pow(x,2)/10)+2;
+
+    else if(x>=100 && x<1001)
+    y = log10(x)+(pow(x,2)+4)/(pow(x,3)+5);
+
+    else if (x>=1800 && x<2000)
+    y = -pow(sin(x),2)+3;
+
+    else
+    y = 1;
+    system("cls");
+    printf("\n\tX = %lf", x);
+    printf("\n\tY = %lf", y);
+    return 0;
+
+}
